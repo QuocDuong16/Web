@@ -1,0 +1,290 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+/* common */
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* main css */
+#main {
+    
+}
+
+/* header */
+#header {
+    background-color: #f9eded;
+    max-height: 54px;
+}
+
+#footer .container,
+#header .container,
+#header #header-logo {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+#header .container {
+    position: relative;
+}
+
+#header .link-list {
+    position: absolute;
+    float: left;
+}
+
+#footer .link-list a,
+#header .link-list a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    width: 28px;
+    line-height: 54px;
+    display: inline-block;
+}
+
+#footer .link-list a:hover,
+#header .link-list a:hover {
+    opacity: 0.6;
+}
+
+#footer .link-list .icons,
+#header .link-list .icons {
+    font-size: 12px;
+}
+
+#nav {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+}
+
+#nav > li {
+    display: inline-block;
+    padding-right: 35px;
+    position: relative;
+}
+
+#nav li a {
+    display: inline-block;
+    text-decoration: none;
+    font: 12px Maven Pro;
+    color: #353535;
+    text-transform: uppercase;
+    line-height: 54px;
+    letter-spacing: 0.5px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav li a:hover {
+    opacity: 0.5;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    text-align: left;
+    background-color: #f9eded;
+    z-index: 1;
+}
+
+#nav .subnav li:hover a {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#nav .subnav a {
+    padding: 6px 10px 7px 10px;
+    min-width: 160px;
+    height: 20px;
+    line-height: 20px;
+    text-transform: none;
+}
+
+#header .search-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 54px;
+    margin-right: 10px;
+}
+
+#header .search-box input[type=text] {
+    max-width: 180px;
+    max-height: 26px;
+    border: none;
+    background-color: #f9eded;
+}
+
+#header .search-box .button {
+    cursor: pointer;
+    max-width: 20px;
+    max-height: 22px;
+    margin-left: 10px;
+    text-align: center;
+    border: medium none;
+    color: #626262;
+    background: none;
+}
+
+#header-logo {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.footer-logo a,
+#header-logo a {
+    text-decoration: none;
+}
+
+.footer-logo p,
+#header-logo p {
+    font-family: lora;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* end header */
+
+/* sliders */
+#sliders {
+    margin: 255px auto 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    /* background-image 3:1 */
+    background-image: url(https://swall.teahub.io/photos/small/151-1510755_marvel-spider-man-ps4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sliders .control {
+    z-index: 2;
+    flex-basis: 160px;
+    cursor: pointer;
+}
+
+#sliders .control:hover {
+    background: #ffffff59;
+}
+
+.slider {
+    width: 100%;
+    padding-top: 33.33333%;
+}
+
+.slider-content {
+    padding: 10px 0;
+    background: #ffffffd9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.slider:hover .slider-content .read-more-btn a {
+    display: inline-block;
+}
+
+.slider .slider-content a {
+    text-decoration: none;
+}
+
+.slider .category-name {
+    color: #e04f62;
+    font-size: 13px;
+    font-family: Lora;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.slider .title-slider h4 a {
+    font-family: Montserrat;
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.slider .time-info {
+    font-family: Playfair Display;
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1;
+}
+
+.slider .read-more-btn a {
+    color: #aaa;
+    border: 1px solid #aaa;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 8px 20px;
+    display: none;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.slider .read-more-btn a:hover {
+    background: #e04f62;
+    border-color: #e04f62;
+    color: #fff;
+}
+/* end slider */
+
+/* content */
+#content {
+    height: 1500px;
+    background-color: rgba(24, 22, 22, 0.144);
+}
+/* end content */
+
+/* footer */
+#footer {
+    max-height: 195px;
+}
+
+#footer .container {
+    position: relative;
+}
+
+#footer .link-list {
+    z-index: 1;
+    position: absolute;
+    line-height: 195px;
+    float: left;
+}
+
+#footer .footer-logo {
+    margin: 30px 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+/* end footer */
