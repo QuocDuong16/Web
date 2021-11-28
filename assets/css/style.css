@@ -4,6 +4,7 @@
     padding: 0;
 }
 html {
+    scroll-behavior: smooth;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
@@ -202,6 +203,7 @@ a {
     display: inline-block;
 }
 
+.main-post .category-name-post a,
 .slider .category-name {
     color: #e04f62;
     font-size: 13px;
@@ -210,6 +212,8 @@ a {
     text-transform: capitalize;
 }
 
+.post-item .post-item-title a,
+.main-post .post-title a,
 .slider .title-slider h4 a {
     font-family: Montserrat;
     color: #000;
@@ -227,6 +231,7 @@ a {
     line-height: 1;
 }
 
+.main-post .more-link a,
 .slider .read-more-btn a {
     color: #aaa;
     border: 1px solid #aaa;
@@ -241,6 +246,7 @@ a {
     text-transform: uppercase;
 }
 
+.main-post .more-link a:hover,
 .slider .read-more-btn a:hover {
     background: #e04f62;
     border-color: #e04f62;
@@ -250,7 +256,7 @@ a {
 
 /* content */
 #content {
-    margin-top: 70px;
+    margin: 70px 0;
     font-family: Montserrat;
     overflow: hidden;
 }
@@ -260,6 +266,7 @@ a {
     height: 100%;
     margin: 0 auto;
     background-color: #fff;
+    overflow: hidden;
 }
 
 #content .main-content {
@@ -268,6 +275,101 @@ a {
     float: left;
 }
 
+.main-content .main-post {
+    text-align: center;
+}
+
+.main-content .main-post img {
+    width: 100%;
+}
+
+.main-post .category-name-post {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.main-post .category-name-post a {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.main-post .category-name-post a::before,
+.main-post .category-name-post a::after {
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: 25px;
+    position: absolute;
+    top: 43%;
+    background-color: #e04f62;
+}
+
+.main-post .category-name-post a::before {
+    right: 100%;
+}
+
+.main-post .category-name-post a::after {
+    left: 100%;
+}
+
+.main-post .post-title {
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.main-post .post-content {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.main-post .more-link a {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.main-post .post-meta {
+    color: #aaaaaa;
+    padding: 5px 10px;
+    text-align: left;
+    border: 1px solid #ebebeb;
+    border-left: none;
+    border-right: none;
+}
+
+.main-post .post-meta span {
+    display: inline-block;
+    width: 86%;
+    text-align: right;
+}
+
+.post-list {
+    overflow: hidden;
+    margin: 0 -20px;
+}
+
+.post-list .post-item {
+    float: left;
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.post-item .post-item-img img {
+    width: 100%;
+}
+
+.post-item .post-item-entry {
+    text-align: justify;
+}
+
+/* sidebar */
 #content .sidebar-content {
     width: 28%;
     height: 100%;
@@ -335,10 +437,6 @@ a {
     color: #444444;
 }
 
-.labels .label {
-
-}
-
 .labels .label a {
     display: inline-block;
     line-height: 14px;
@@ -377,7 +475,7 @@ a {
 
 /* footer */
 #footer {
-    max-height: 195px;
+    min-height: 195px;
 }
 
 #footer .container {
@@ -388,7 +486,6 @@ a {
     z-index: 1;
     position: absolute;
     line-height: 195px;
-    float: left;
 }
 
 #footer .footer-logo {
