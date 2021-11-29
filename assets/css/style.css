@@ -204,6 +204,7 @@ body {
 .slider:hover .slider-content .read-more-btn a {
     display: inline-block;
 }
+
 .main-post .category-name-post a,
 .slider .category-name {
     color: #e04f62;
