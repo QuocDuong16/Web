@@ -177,7 +177,7 @@ body {
 }
 
 #sliders .control {
-    z-index: 2;
+    z-index: 1;
     flex-basis: 160px;
     cursor: pointer;
 }
@@ -342,9 +342,14 @@ body {
     border-right: none;
 }
 
-.main-post .post-meta span {
+.main-post .post-meta .span1 {
     display: inline-block;
-    width: 86%;
+    width: 49%;
+}
+
+.main-post .post-meta .span2 {
+    display: inline-block;
+    width: 50%;
     text-align: right;
 }
 
