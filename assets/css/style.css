@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
@@ -19,6 +20,7 @@ a {
 /* main css */
 
 #main {
+    width: 100%;
     color: #4e4e4e;
     font: normal normal 14px Lora;
     line-height: 24px;
@@ -34,24 +36,8 @@ a {
     max-height: 54px;
 }
 
-#footer .container,
-#header .container,
-#header #header-logo {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#header .container {
-    position: relative;
-}
-
-#header .link-list {
-    position: absolute;
-    float: left;
-}
-
-#footer .link-list a,
-#header .link-list a {
+#footer .social-list a,
+#header .social-list a {
     color: #000;
     text-align: center;
     width: 28px;
@@ -59,28 +45,27 @@ a {
     display: inline-block;
 }
 
-#footer .link-list a:hover,
-#header .link-list a:hover {
+#footer .social-list a:hover,
+#header .social-list a:hover {
     opacity: 0.6;
 }
 
-#footer .link-list .icons,
-#header .link-list .icons {
+#footer .social-list .icons,
+#header .social-list .icons {
     font-size: 12px;
 }
 
-#nav {
-    display: block;
+.nav {
     text-align: center;
 }
 
-#nav > li {
+.nav > li {
     display: inline-block;
     padding-right: 35px;
     position: relative;
 }
 
-#nav li a {
+.nav li a {
     display: inline-block;
     font: 12px Maven Pro;
     color: #353535;
@@ -89,67 +74,135 @@ a {
     letter-spacing: 0.5px;
 }
 
-#nav li:hover .subnav {
-    display: block;
+.nav li:hover .sub-nav {
+    display: inline-block;
 }
 
-#nav li a:hover {
+.nav li a:hover {
     opacity: 0.5;
 }
 
-#nav .subnav {
+.nav .sub-nav {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -10px;
     text-align: left;
     background-color: #f9eded;
     z-index: 1;
 }
 
-#nav .subnav li:hover a {
+.nav .sub-nav li:hover a {
     background-color: #333333;
     color: #ffffff;
 }
 
-#nav .subnav a {
+.nav .sub-nav a {
     padding: 6px 10px 7px 10px;
     min-width: 160px;
-    height: 20px;
-    line-height: 20px;
+    line-height: 25px;
     text-transform: none;
 }
 
-#header .search-box {
-    position: absolute;
-    right: 0;
-    top: 0;
+.navbar-btn {
     line-height: 54px;
-    margin-right: 10px;
+    padding-left: 20px;
 }
 
-#header .search-box input[type=text] {
-    max-width: 180px;
-    max-height: 26px;
-    padding: 5px 10px;
+.navbar-btn button {
+    color: #333;
     border: none;
-    background-color: #f9eded;
+    width: 28px;
+    height: 28px;
+    z-index: 1;
+}
+
+#header .search-box {
+    justify-content: right;
+    align-items: center;
+    display: flex;
 }
 
 #header .search-box .button {
     cursor: pointer;
     max-width: 20px;
     max-height: 22px;
-    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
     border: none;
     color: #626262;
     background: none;
 }
 
-#header-logo {
+.header-logo {
     text-align: center;
     padding: 60px 0;
+}
+
+.nav-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-mobile-tablet {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    z-index: 1;
+}
+.nav-list-mobile-tablet {
+    margin-top: 40px;
+}
+.nav-list-mobile-tablet a {
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.nav-list-mobile-tablet li:hover a {
+    border: 1px solid #eee;
+    background-color: #f9eded;
+}
+.nav-list-mobile-tablet > li {
+    position: relative;
+}
+.sub-nav-mobile-tablet {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+}
+.nav-list-mobile-tablet li:hover .sub-nav-mobile-tablet {
+    display: inline-block;
+}
+.sub-nav-mobile-tablet a {
+    padding: 6px 10px 7px 10px;
+    min-width: 160px;
+    line-height: 25px;
+}
+.sub-nav-mobile-tablet li:hover a {
+    background-color: #333333;
+    color: #ffffff;
+}
+.nav-mobile-tablet-close {
+    color: #666;
+    font-size: 1rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;    
 }
 
 /* End: header */
@@ -158,17 +211,19 @@ a {
 #sliders .slideshow {
     margin: 255px auto 0 auto;
     width: 100%;
+    /* min-height: 550px; */
     padding-top: 33.33333%;
     overflow: hidden;
     position: relative;
-    display: flex;
     /* background-image 3:1 */
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .slider-content {
+    /* max-height: 160px; */
+    /* min-height: 100px; */
     padding: 10px 0;
     background: #ffffffb9;
     position: absolute;
@@ -238,20 +293,6 @@ a {
     overflow: hidden;
 }
 
-#content .container {
-    width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-    background-color: #fff;
-    overflow: hidden;
-}
-
-#content .main-content {
-    width: 67%;
-    height: 100%;
-    float: left;
-}
-
 .main-content .main-post {
     text-align: center;
 }
@@ -312,7 +353,7 @@ a {
 
 .main-post .post-meta {
     color: #aaaaaa;
-    padding: 5px 10px;
+    padding: 5px 0px;
     text-align: left;
     border: 1px solid #ebebeb;
     border-left: none;
@@ -321,26 +362,19 @@ a {
 
 .main-post .post-meta .span1 {
     display: inline-block;
-    width: 49%;
 }
 
 .main-post .post-meta .span2 {
     display: inline-block;
-    width: 50%;
     text-align: right;
 }
-
+/* post-list */
 .post-list {
     overflow: hidden;
-    margin: 0 -20px;
 }
 
 .post-list .post-item {
-    float: left;
-    width: 42%;
-    padding: 30px;
-    text-align: center;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .post-item .post-item-img img {
@@ -395,7 +429,7 @@ a {
 }
 
 .about-us img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .about-us p {
@@ -436,11 +470,6 @@ a {
     overflow: hidden;
 }
 
-.recent-posts .side-item .side-img {
-    width: 30%;
-    float: left;
-}
-
 .recent-posts .side-item img {
     width: 100%;
 }
@@ -448,8 +477,8 @@ a {
 .recent-posts .side-item-text {
     display: inline-block;
     overflow: hidden;
-    margin-left: 20px;
-    width: 60%;
+    /* margin-left: 20px; */
+    /* width: 60%; */
 }
 
 .recent-posts .side-item-text a {
@@ -463,20 +492,13 @@ a {
     min-height: 195px;
 }
 
-#footer .container {
-    position: relative;
-}
-
-#footer .link-list {
+#footer .social-list {
     z-index: 1;
-    position: absolute;
     line-height: 195px;
 }
 
 #footer .footer-logo {
     margin: 30px 0;
-    position: absolute;
-    width: 100%;
     text-align: center;
 }
 /* End: footer */

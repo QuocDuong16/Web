@@ -1,4 +1,4 @@
-/*slideshow auto*/
+// slideshow auto
 var slideIndex = 0;
 showSlides();
 
@@ -13,7 +13,8 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
-//slide main post
+
+// slide main post
 var slideIndexPost = 1;
 showSlidesPost(slideIndexPost);
 
@@ -35,3 +36,5 @@ function showSlidesPost(n) {
     }
     slidesPost[slideIndexPost-1].style.display = "block";
 }
+
+// nav bar mobile tablet
