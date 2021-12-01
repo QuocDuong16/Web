@@ -17,9 +17,6 @@ a {
 }
 
 /* main css */
-body {
-    position: relative;
-}
 
 #main {
     color: #4e4e4e;
@@ -40,7 +37,7 @@ body {
 #footer .container,
 #header .container,
 #header #header-logo {
-    max-width: 1240px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -134,6 +131,7 @@ body {
 #header .search-box input[type=text] {
     max-width: 180px;
     max-height: 26px;
+    padding: 5px 10px;
     border: none;
     background-color: #f9eded;
 }
@@ -144,7 +142,7 @@ body {
     max-height: 22px;
     margin-left: 10px;
     text-align: center;
-    border: medium none;
+    border: none;
     color: #626262;
     background: none;
 }
@@ -159,6 +157,8 @@ body {
 /* Begin: sliders */
 #sliders .slideshow {
     margin: 255px auto 0 auto;
+    width: 100%;
+    padding-top: 33.33333%;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -166,21 +166,6 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-#sliders .control {
-    z-index: 1;
-    flex-basis: 160px;
-    cursor: pointer;
-}
-
-#sliders .control:hover {
-    background: #ffffff59;
-}
-
-.slider {
-    width: 100%;
-    padding-top: 33.33333%;
 }
 
 .slider-content {
@@ -193,7 +178,7 @@ body {
     text-align: center;
 }
 
-.slider:hover .slider-content .read-more-btn a {
+.slideshow:hover .slider-content .read-more-btn a {
     display: inline-block;
 }
 .main-post .category-name-post a,
@@ -207,7 +192,7 @@ body {
 
 .post-item .post-item-title a,
 .main-post .post-title a,
-.slider .title-slider h4 a {
+.slideshow .title-slider h4 a {
     font-family: Montserrat;
     color: #000;
     font-size: 22px;
@@ -215,7 +200,7 @@ body {
     line-height: 1.8;
 }
 
-.slider .time-info {
+.slideshow .time-info {
     font-family: Playfair Display;
     margin: 0 0 10px 0;
     font-size: 12px;
@@ -225,7 +210,7 @@ body {
 }
 
 .main-post .more-link a,
-.slider .read-more-btn a {
+.slideshow .read-more-btn a {
     color: #aaa;
     border: 1px solid #aaa;
     font-size: 11px;
@@ -240,7 +225,7 @@ body {
 }
 
 .main-post .more-link a:hover,
-.slider .read-more-btn a:hover {
+.slideshow .read-more-btn a:hover {
     background: #e04f62;
     border-color: #e04f62;
     color: #fff;
@@ -254,7 +239,7 @@ body {
 }
 
 #content .container {
-    width: 1240px;
+    width: 1200px;
     height: 100%;
     margin: 0 auto;
     background-color: #fff;
@@ -347,7 +332,7 @@ body {
 
 .post-list {
     overflow: hidden;
-    margin: 0 -10px;
+    margin: 0 -20px;
 }
 
 .post-list .post-item {
@@ -498,8 +483,7 @@ body {
 
 /* to top button */
 .to-top {
-    display: flex;
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     padding: 10px;
@@ -507,66 +491,58 @@ body {
     border: 1px solid #ccc;
     border-radius: 50%;
 }
+.to-top a {
+    color: #000;
+}
 /* css for js */
 
 .js-mySlides {display: none;}
 
 /* Fading animation */
-.js-fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+.fade {
+    animation: fade 1.5s linear;
 }
 
-@-webkit-keyframes js-fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-@keyframes js-fade {
-    from {opacity: .4} 
+@keyframes fade {
+    from {opacity: .6} 
     to {opacity: 1}
 }
 /*next vs pre*/
 
-.mySlidesPost {display: none}
-img {vertical-align: middle;}
- 
+.js-mySlidesPost {display: none;}
  /* Slideshow container */
- .slideshowPost-container {
-  max-width: 2000px;
-   position: relative;
-   margin: auto;
- }
+.slideshowPost-container {
+    position: relative;
+    margin: auto;
+}
  
  /* Next & previous buttons */
- .prev, .next {
-   cursor: pointer;
-   position: absolute;
-   top: 50%;
-   width: auto;
-   padding: 16px;
-   margin-top: -22px;
-   color: white;
-   font-weight: bold;
-   font-size: 18px;
-   transition: 0.6s ease;
-   border-radius: 0 3px 3px 0;
-   user-select: none;
- }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
  
  /* Position the "next button" to the right */
- .next {
+.next {
    right: 0;
    border-radius: 3px 0 0 3px;
- }
- .prev {
+}
+.prev {
     left:  0;
-    border-radius: 3px 0 0 3px;
-  }
+    border-radius: 0 3px 3px 0;
+}
  
  /* On hover, add a black background color with a little bit see-through */
- .prev:hover, .next:hover {
-   background-color: pink;
- }
+.prev:hover, .next:hover {
+    background-color: pink;
+}
