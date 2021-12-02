@@ -19,6 +19,12 @@
     .post-item-entry {
         font-size: 16px;
     }
+    .sub-post-list h3 {
+        padding: 10px 0 20px;
+    }
+    .comments-title {
+        padding: 10px 0;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -38,6 +44,9 @@
 }
 
 @media (max-width: 739px) {
+    .sub-post-item a,
+    .sub-post-share a,
+    .entry-tags p,
     .post-item-title,
     .post-item-entry,
     .main-post .category-name-post,
@@ -48,5 +57,17 @@
     }
     .main-post .post-title a {
         font-size: 18px;
+    }
+    .entry-tags p {
+        padding: 0 10px;
+    }
+    .sub-post-list h3 {
+        padding: 0 10px 20px;
+    }
+    .comments-title {
+        padding: 10px 10px;
+    }
+    .comment {
+        padding: 0 10px;
     }
 }
