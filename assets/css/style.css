@@ -246,7 +246,7 @@ a {
     font-family: Montserrat;
     color: #000;
     font-weight: 500;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .slideshow .time-info {
@@ -328,7 +328,6 @@ a {
 }
 
 .main-post .post-title {
-    font-size: 26px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }

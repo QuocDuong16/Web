@@ -31,6 +31,7 @@
     #footer .social-list a {
         width: 40px;
     }
+    .post-item .post-item-title a,
     #footer .social-list .icons {
         font-size: 18px;
     }
@@ -46,6 +47,6 @@
         padding: 0 10px;
     }
     .main-post .post-title a {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
