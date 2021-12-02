@@ -7,18 +7,14 @@
 html {
     scroll-behavior: smooth;
 }
-
 /* common */
 ol, ul {
     list-style-type: none;
 }
-
 a {
     text-decoration: none;
 }
-
 /* main css */
-
 #main {
     width: 100%;
     color: #4e4e4e;
@@ -29,13 +25,11 @@ a {
     font-weight: 400;
     background-color: #ffffff;
 }
-
 /* Begin: header */
 #header {
     background-color: #f9eded;
     max-height: 54px;
 }
-
 #header .social-list a {
     color: #000;
     text-align: center;
@@ -43,12 +37,10 @@ a {
     line-height: 54px;
     display: inline-block;
 }
-
 #footer .social-list a:hover,
 #header .social-list a:hover {
     opacity: 0.6;
 }
-
 #header .social-list .icons {
     font-size: 12px;
 }
@@ -56,13 +48,11 @@ a {
 .nav {
     text-align: center;
 }
-
 .nav > li {
     display: inline-block;
     padding-right: 35px;
     position: relative;
 }
-
 .nav li a {
     display: inline-block;
     font: 12px Maven Pro;
@@ -71,15 +61,12 @@ a {
     line-height: 54px;
     letter-spacing: 0.5px;
 }
-
 .nav li:hover .sub-nav {
     display: inline-block;
 }
-
 .nav li a:hover {
     opacity: 0.5;
 }
-
 .nav .sub-nav {
     display: none;
     position: absolute;
@@ -89,12 +76,10 @@ a {
     background-color: #f9eded;
     z-index: 1;
 }
-
 .nav .sub-nav li:hover a {
     background-color: #333333;
     color: #ffffff;
 }
-
 .nav .sub-nav a {
     padding: 6px 10px 7px 10px;
     min-width: 160px;
@@ -106,7 +91,6 @@ a {
     line-height: 54px;
     padding-left: 20px;
 }
-
 .navbar-btn button {
     color: #333;
     border: none;
@@ -120,7 +104,6 @@ a {
     align-items: center;
     display: flex;
 }
-
 #header .search-box .button {
     cursor: pointer;
     max-width: 20px;
@@ -131,7 +114,6 @@ a {
     color: #626262;
     background: none;
 }
-
 .header-logo {
     text-align: center;
     padding: 60px 0;
@@ -202,7 +184,6 @@ a {
     top: 1rem;
     right: 1rem;    
 }
-
 /* End: header */
 
 /* Begin: sliders */
@@ -217,7 +198,6 @@ a {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
 .slider-content {
     padding: 10px 0;
     background: #ffffffb9;
@@ -227,7 +207,6 @@ a {
     right: 0;
     text-align: center;
 }
-
 .slideshow:hover .slider-content .read-more-btn a {
     display: inline-block;
 }
@@ -259,7 +238,6 @@ a {
     font-style: italic;
     line-height: 1;
 }
-
 .main-post .more-link a,
 .slideshow .read-more-btn a {
     color: #aaa;
@@ -274,7 +252,6 @@ a {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-
 .main-post .more-link a:hover,
 .slideshow .read-more-btn a:hover {
     background: #e04f62;
@@ -282,6 +259,7 @@ a {
     color: #fff;
 }
 /* End: slider */
+
 /* Begin: content */
 #content {
     margin: 70px 0;
@@ -319,7 +297,6 @@ a {
     height: 1000px;
     background-color: rgba(0, 0, 0, 0.3);
 }
-
 .sub-post-meta {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -401,20 +378,16 @@ a {
 .main-content {
     width: 100%;
 }
-
 .main-content .main-post {
     text-align: center;
 }
-
 .main-content .main-post img {
     width: 100%;
 }
-
 .main-post .category-name-post {
     margin-top: 20px;
     margin-bottom: 15px;
 }
-
 .main-post .category-name-post a {
     position: relative;
     display: inline-block;
@@ -422,7 +395,6 @@ a {
     line-height: 1.4;
     margin-bottom: 12px;
 }
-
 .main-post .category-name-post a::before,
 .main-post .category-name-post a::after {
     content: '';
@@ -433,32 +405,26 @@ a {
     top: 43%;
     background-color: #e04f62;
 }
-
 .main-post .category-name-post a::before {
     right: 100%;
 }
-
 .main-post .category-name-post a::after {
     left: 100%;
 }
-
 .main-post .post-title {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-
 .main-post .post-content {
     margin-top: 20px;
     text-align: justify;
     line-height: 1.6;
     margin-bottom: 20px;
 }
-
 .main-post .more-link a {
     display: inline-block;
     margin-bottom: 40px;
 }
-
 .main-post .post-meta {
     color: #aaaaaa;
     padding: 5px 0px;
@@ -467,11 +433,9 @@ a {
     border-left: none;
     border-right: none;
 }
-
 .main-post .post-meta .span1 {
     display: inline-block;
 }
-
 .main-post .post-meta .span2 {
     display: inline-block;
     text-align: right;
@@ -480,40 +444,33 @@ a {
 .post-list {
     overflow: hidden;
 }
-
 .post-list .post-item {
     margin: 20px 0;
 }
-
 .post-item .post-item-img img {
     width: 100%;
 }
-
 .post-item .post-item-entry {
     text-align: justify;
 }
-
 /* sidebar */
 #content .sidebar-content {
     width: 28%;
     height: 100%;
     float: right;
 }
-
 .sidebar-content .widget {
     width: 280px;
     padding: 40px 32px;
     border: 1px solid #ebebeb;
     margin-bottom: 50px;
 }
-
 .widget .widget-title {
     text-align: center;
     text-transform: uppercase;
     overflow: hidden;
     margin-bottom: 20px;
 }
-
 .widget .widget-title span {
     position: relative;
 }
@@ -528,7 +485,6 @@ a {
     width: 200px;
     margin: 0 14px;
 }
-
 .widget .widget-title span:after {
     left: 100%;
 }
@@ -539,7 +495,6 @@ a {
 .about-us img {
     width: 100%;
 }
-
 .about-us p {
     margin-top: 10px;
     text-align: center;
@@ -548,7 +503,6 @@ a {
 .follow-us .widget-list {
     text-align: center;
 }
-
 .follow-us .widget-list a {
     display: inline-block;
     width: 36px;
@@ -577,23 +531,19 @@ a {
     margin-top: 20px;
     overflow: hidden;
 }
-
 .recent-posts .side-item img {
     width: 100%;
 }
-
 .recent-posts .side-item-text {
     display: inline-block;
     overflow: hidden;
 }
-
 .recent-posts .side-item-text a {
     color: #333;
 }
 .recent-posts .side-item-text p {
     color: #333;
 }
-
 /* End: content */
 
 /* Begin: footer */
@@ -632,21 +582,18 @@ a {
 .fade {
     animation: fade 1.5s linear;
 }
-
 @keyframes fade {
     from {opacity: .6} 
     to {opacity: 1}
 }
-/*next vs pre*/
-
+/* next vs pre */
 .js-mySlidesPost {display: none;}
  /* Slideshow container */
 .slideshowPost-container {
     position: relative;
     margin: auto;
 }
- 
- /* Next & previous buttons */
+/* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -661,8 +608,7 @@ a {
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
- 
- /* Position the "next button" to the right */
+/* Position the "next button" to the right */
 .next {
    right: 0;
    border-radius: 3px 0 0 3px;
@@ -671,8 +617,6 @@ a {
     left:  0;
     border-radius: 0 3px 3px 0;
 }
- 
- /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: pink;
 }
