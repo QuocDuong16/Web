@@ -1,5 +1,40 @@
+@media (min-width: 1024px) {
+    #footer .social-list {
+        line-height: 195px;
+    }
+    #footer {
+        min-height: 195px;
+    }
+    #footer .social-list a {
+        width: 28px;
+    }
+    #footer .social-list .icons {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 1023px) {
     .hidden {
         display: none;
+    }
+    #footer .social-list {
+        text-align: center;
+    }
+    #footer .social-list a {
+        width: 40px;
+    }
+    #footer .social-list .icons {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 739px) {
+    .post-item-title,
+    .post-item-entry,
+    .main-post .category-name-post,
+    .main-post .post-title,
+    .main-post .post-content,
+    .main-post .more-link {
+        padding: 0 10px;
     }
 }
