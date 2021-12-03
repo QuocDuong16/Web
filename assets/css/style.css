@@ -14,6 +14,18 @@ ol, ul {
 a {
     text-decoration: none;
 }
+.text-center {
+    text-align: center !important;
+}
+.bold-text {
+    font-weight: bold !important;
+}
+.italic-text {
+    font-style: italic !important;
+}
+.light-red-text {
+    color: rgba(255, 0, 0, 0.5) !important;
+}
 /* main css */
 #main {
     width: 100%;
@@ -294,8 +306,11 @@ a {
 /* sub-content */
 .sub-post-entry {
     margin-top: 20px;
-    height: 1000px;
-    background-color: rgba(0, 0, 0, 0.3);
+    text-align: justify;
+}
+.sub-post-entry img {
+    width: 100%;
+    margin-top: 10px;
 }
 .sub-post-meta {
     margin-top: 20px;
@@ -619,7 +634,4 @@ a {
 }
 .prev:hover, .next:hover {
     background-color: pink;
-}
-#spiders {
-    max-width: 792px;
 }
