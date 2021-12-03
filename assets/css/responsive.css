@@ -44,6 +44,9 @@
 }
 
 @media (max-width: 739px) {
+    .sub-post-entry,
+    .entry-tags p,
+    .comment,
     .sub-post-item a,
     .sub-post-share a,
     .entry-tags p,
@@ -58,16 +61,10 @@
     .main-post .post-title a {
         font-size: 18px;
     }
-    .entry-tags p {
-        padding: 0 10px;
-    }
     .sub-post-list h3 {
         padding: 0 10px 20px;
     }
     .comments-title {
         padding: 10px 10px;
-    }
-    .comment {
-        padding: 0 10px;
     }
 }
