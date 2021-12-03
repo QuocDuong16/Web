@@ -506,6 +506,13 @@ a {
 .widget .widget-title span:before {
     right: 100%;
 }
+.about-us {
+    width: 100%;
+}
+.about-us p {
+    text-align: center;
+    color: #333;
+}
 
 .trailer img {
     width: 100%;
