@@ -507,12 +507,11 @@ a {
     right: 100%;
 }
 
-.about-us img {
+.trailer img {
     width: 100%;
 }
-.about-us p {
-    margin-top: 10px;
-    text-align: center;
+.trailer .video-trailer {
+    height: 110px;
 }
 
 .follow-us .widget-list {
