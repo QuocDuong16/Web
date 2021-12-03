@@ -620,3 +620,6 @@ a {
 .prev:hover, .next:hover {
     background-color: pink;
 }
+#spiders {
+    max-width: 792px;
+}
