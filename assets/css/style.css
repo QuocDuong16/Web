@@ -518,7 +518,7 @@ a {
     width: 100%;
 }
 .trailer .video-trailer {
-    height: 110px;
+    min-height: 110px;
 }
 
 .follow-us .widget-list {
