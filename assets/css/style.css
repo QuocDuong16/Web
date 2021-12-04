@@ -26,6 +26,10 @@ a {
 .light-red-text {
     color: rgba(255, 0, 0, 0.5) !important;
 }
+.line {
+    height: 1px;
+    background-color: #ebebeb;
+}
 /* main css */
 #main {
     width: 100%;
@@ -590,7 +594,8 @@ a {
     margin: 25px;
     border: 1px solid #ccc;
     border-radius: 50%;
-    /* opacity: 0; */
+    background-color: rgba(255, 255, 255, 0.3);
+    display: none;
 }
 .to-top a {
     color: #000;
