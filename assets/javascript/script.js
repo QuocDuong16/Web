@@ -1,3 +1,13 @@
+//Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+window.onscroll = function() {scrollFunction()};
+// khai báo hàm scrollFunction
+function scrollFunction() {
+    if (document.body.scrollTop > 95 || document.documentElement.scrollTop > 95) {
+        document.querySelector(".to-top").style.display = "block";
+    } else {
+        document.querySelector(".to-top").style.display = "none";
+    }
+}
 // slideshow auto
 var slideIndex = 0;
 showSlides();
@@ -38,13 +48,3 @@ function showSlidesPost(n) {
 }
 
 // nav bar mobile tablet
-//Khi người dùng cuộn chuột thì gọi hàm scrollFunction
-window.onscroll = function() {scrollFunction()};
-// khai báo hàm scrollFunction
-function scrollFunction() {
-    if (document.body.scrollTop > 95 || document.documentElement.scrollTop > 95) {
-        document.querySelector(".to-top").style.display = "block";
-    } else {
-        document.querySelector(".to-top").style.display = "none";
-    }
-}
