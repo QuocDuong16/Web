@@ -226,6 +226,7 @@ a {
 .slideshow:hover .slider-content .read-more-btn a {
     display: inline-block;
 }
+.post-label,
 .sub-post-header .sub-post-label a,
 .main-post .category-name-post a,
 .slider-content .category-name a {
@@ -288,6 +289,11 @@ a {
     height: 1px;
     background-color: #ebebeb;
 }
+.post-label {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.post-label,
 .sub-main-post .sub-post-header {
     text-align: center;
 }
