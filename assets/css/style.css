@@ -162,9 +162,6 @@ a {
     max-width: 100%;
     z-index: 1;
 }
-.nav-list-mobile-tablet {
-    margin-top: 40px;
-}
 .nav-list-mobile-tablet a {
     color: #333;
     display: block;
@@ -197,6 +194,9 @@ a {
 .sub-nav-mobile-tablet li:hover a {
     background-color: #333333;
     color: #ffffff;
+}
+.nav-mobile-tablet .social-list {
+    margin-left: 10px;
 }
 .nav-mobile-tablet-close {
     color: #666;
