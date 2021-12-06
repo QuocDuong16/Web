@@ -67,17 +67,17 @@
                     </ul>
                     <!-- navigation bar -->
                     <div class="col l-0 m-4 sm-4 navbar-btn">
-                        <button class="js-navbar"><i class="ti-menu-alt"></i></button>
+                        <button onclick="nav_open()" type="button"><i class="ti-menu-alt"></i></button>
                     </div>
                     <div class="col l-2 m-8 sm-8 search-box">
                         <a href="./search.html" class="button"><i class="ti-search"></i></a>
                     </div>
                     <!-- navigation on mobile & tablet -->
-                    <div class="nav-overlay"></div>
+                    <div class="nav-overlay" onclick="nav_exit()"></div>
                     <div class="nav-mobile-tablet js-nav-mobile-tablet">
-                        <a href="" class="nav-mobile-tablet-close"><i class="ti-close"></i></a>
+                        <button type="button" onclick="nav_exit()" class="nav-mobile-tablet-close"><i class="ti-close"></i></button>
                         <ul class="nav-list-mobile-tablet">
-                            <li><a href="./index">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="">Discover</a></li>
                             <li>
                                 <a href="">Category</a>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="header-logo logo">
                     <div>
-                        <a href="./index.html"><img src="assets/img/logo (3).jpg" alt="logo"></a>
+                        <a href="./index.html"><img src="assets/img/logo.jpg" alt="logo"></a>
                     </div>
                 </div>
             </div>
@@ -125,29 +125,70 @@
                                 </div>
                             </div>
                             <div class="sub-post-entry">
-                                <p class="bold-text">HHT - Doctor Octopus, Electro, Green Goblin và Sandman, liệu sẽ còn bao nhiêu kẻ mà Spider-Man sẽ phải đối đầu đây? </p>
+                                <p class="bold-text">HHT - Doctor Octopus, Electro, Green Goblin và 
+                                    Sandman, liệu sẽ còn bao nhiêu kẻ mà Spider-Man sẽ phải đối 
+                                    đầu đây? </p>
                                 <br>
-                                Nam diễn viên <span class="light-red-text">Tom Holland</span> vừa qua đã đăng tải teaser poster mới nhất của Spider-Man: No Way Home trên tài khoản Instagram cá nhân của mình với mô tả “Phim này sẽ khiến bạn bất ngờ cực độ luôn, tin tui đi!”.
-                                Tuy trông có chút đơn giản (hay còn gọi là “lười không muốn làm” hoặc “nước tới chân mới nhảy” theo lời “bình loạn” của những khán giả hài hước), nhưng poster này lại gây sốt cực kỳ khi xác nhận có đến tận 4 phản diện sẽ thay nhau “hành” “Nhện nhọ” trong phần phim riêng thứ ba của cậu.
+                                Nam diễn viên <span class="light-red-text">Tom Holland</span> vừa 
+                                qua đã đăng tải teaser poster mới nhất của Spider-Man: No Way Home 
+                                trên tài khoản Instagram cá nhân của mình với mô tả “Phim này sẽ 
+                                khiến bạn bất ngờ cực độ luôn, tin tui đi!”.
+                                Tuy trông có chút đơn giản (hay còn gọi là “lười không muốn làm” 
+                                hoặc “nước tới chân mới nhảy” theo lời “bình loạn” của những khán 
+                                giả hài hước), nhưng poster này lại gây sốt cực kỳ khi xác nhận có 
+                                đến tận 4 phản diện sẽ thay nhau “hành” “Nhện nhọ” trong phần phim 
+                                riêng thứ ba của cậu.
                                 <br>
                                 <img src="./assets/img/spider1.jpg" alt="Spider Man">
-                                <p class="text-center">Teaser poster của "Nhện Nhọ: Vô Gia Cư". - Nguồn: Twitter</p>
+                                <p class="text-center">Teaser poster của "Nhện Nhọ: Vô Gia Cư". - 
+                                    Nguồn: Twitter</p>
                                 <br>
-                                Trong poster, tư thế của thành viên Avenger trẻ tuổi nhất trong bộ giáp “Iron Spider” (được Iron Man chế tạo) là hình ảnh được cắt ra từ cuối đoạn teaser trailer ra mắt cách đây không lâu.
-                                <br>Giữa đống đổ nát hoang tàn, người hùng giăng tơ bị bao vây bởi tận 4 ác nhân: Doctor Octopus với những chiếc vòi kim loại nổi bật; những tia sét vàng, chắc chắn không phải là Thor, mà là Electro; ở phía đằng xa, mờ ảo trên chiếc ván lướt chính là Green Goblin; và cuối cùng, những cồn cát bay trên không mà theo nhiều khán giả phân vân, chính là Sandman.
+                                Trong poster, tư thế của thành viên Avenger trẻ tuổi nhất trong bộ 
+                                giáp “Iron Spider” (được Iron Man chế tạo) là hình ảnh được cắt ra 
+                                từ cuối đoạn teaser trailer ra mắt cách đây không lâu.
+                                <br>Giữa đống đổ nát hoang tàn, người hùng giăng tơ bị bao vây bởi 
+                                tận 4 ác nhân: Doctor Octopus với những chiếc vòi kim loại nổi bật; 
+                                những tia sét vàng, chắc chắn không phải là Thor, mà là Electro; ở 
+                                phía đằng xa, mờ ảo trên chiếc ván lướt chính là Green Goblin; và 
+                                cuối cùng, những cồn cát bay trên không mà theo nhiều khán giả phân 
+                                vân, chính là Sandman.
                                 <br>
-                                Theo giả thuyết từ những tài khoản người hâm mộ trên các trang mạng xã hội, kẻ thù của Spider-Man lần này chính là hội Sinister Six, và 4 trong số 6 kẻ này đã chính thức xuất hiện trong những sản phẩm quảng bá mới nhất của No Way Home. Vậy 2 kẻ còn lại ở đâu? Và chúng là ai?
+                                Theo giả thuyết từ những tài khoản người hâm mộ trên các trang mạng 
+                                xã hội, kẻ thù của Spider-Man lần này chính là hội Sinister Six, và 
+                                4 trong số 6 kẻ này đã chính thức xuất hiện trong những sản phẩm 
+                                quảng bá mới nhất của No Way Home. Vậy 2 kẻ còn lại ở đâu? Và chúng 
+                                là ai?
                                 <br>
-                                Cũng từ những giả thuyết này cho rằng, Mysterio - phản diện của Spider-Man: Far from Home vẫn còn chưa chết mà đang manh nha trở lại báo thù cậu nhóc Peter Parker sau khi “bóc phốt” cậu giữa bàn dân thiên hạ. Nhưng biết đâu 2 kẻ còn lại này là Morbius và Vulture, khi gã “Kền Kền” có vẻ đã vượt ngục thành công nhờ sự trợ giúp của “giáo sư ma cà rồng” trong trailer mới nhất? Và còn cả Venom và Kraven the Hunter nữa khi mối liên hệ giữa 2 vũ trụ MCU và SUMC (vũ trụ phim Sony) đã quá rõ ràng?
+                                Cũng từ những giả thuyết này cho rằng, Mysterio - phản diện của 
+                                Spider-Man: Far from Home vẫn còn chưa chết mà đang manh nha trở 
+                                lại báo thù cậu nhóc Peter Parker sau khi “bóc phốt” cậu giữa bàn 
+                                dân thiên hạ. Nhưng biết đâu 2 kẻ còn lại này là Morbius và Vulture, 
+                                khi gã “Kền Kền” có vẻ đã vượt ngục thành công nhờ sự trợ giúp của 
+                                “giáo sư ma cà rồng” trong trailer mới nhất? Và còn cả Venom và 
+                                Kraven the Hunter nữa khi mối liên hệ giữa 2 vũ trụ MCU và SUMC 
+                                (vũ trụ phim Sony) đã quá rõ ràng?
                                 <br>
                                 <img src="./assets/img/spider2.jpg" alt="Spider Man" >
-                                <p class="text-center">Nhóm Sinister Six của MCU sẽ bao gồm những ai? - Nguồn: Twitter </p>
+                                <p class="text-center">Nhóm Sinister Six của MCU sẽ bao gồm những 
+                                    ai? - Nguồn: Twitter </p>
                                 <br>
-                                Đứng trước dàn phản diện với ý đồ “đánh hội đồng” như thế này, khán giả tin rằng Peter sẽ có nhiều hơn một sự trợ giúp từ Doctor Strange, vì dẫu sao đi nữa thì mục tiêu chính của “Phù Thủy Tối Thượng” vẫn là tìm cách khôi phục thực tại của mình không bị tan rã (nhất là lỗi này còn do “Trang Đại Sư” tự gây ra nữa). Cũng vì thế, sự xuất hiện của 2 “Người Nhện” thế hệ trước là Tobey Maguire và Andrew Garfield để hỗ trợ cậu em Tom Holland vẫn là “niềm tin bất diệt” trong lòng những khán giả này.
+                                Đứng trước dàn phản diện với ý đồ “đánh hội đồng” như thế này, khán 
+                                giả tin rằng Peter sẽ có nhiều hơn một sự trợ giúp từ Doctor Strange, 
+                                vì dẫu sao đi nữa thì mục tiêu chính của “Phù Thủy Tối Thượng” vẫn 
+                                là tìm cách khôi phục thực tại của mình không bị tan rã (nhất là lỗi 
+                                này còn do “Trang Đại Sư” tự gây ra nữa). Cũng vì thế, sự xuất hiện 
+                                của 2 “Người Nhện” thế hệ trước là Tobey Maguire và Andrew Garfield 
+                                để hỗ trợ cậu em Tom Holland vẫn là “niềm tin bất diệt” trong lòng 
+                                những khán giả này.
                                 <br>
                                 <img src="./assets/img/spider3.jpg" alt="Spider Man" >
                                 <br>
-                                Dẫu cho tài tử Andrew Garfield - “Spider-Man” của những năm đầu 2010 - đã liên tiếp chối bỏ nghi vấn này trên truyền thông, khán giả vẫn nghĩ rằng anh đang buộc phải “xạo” theo lệnh của Marvel Studios và Sony Pictures. Có rất nhiều bằng chứng của giả thuyết này cho thấy cả anh và Tobey Maguire - “Spider-Man” thập niên 2000 - sẽ xuất hiện trong No Way Home.
+                                Dẫu cho tài tử Andrew Garfield - “Spider-Man” của những năm đầu 2010 
+                                - đã liên tiếp chối bỏ nghi vấn này trên truyền thông, khán giả vẫn 
+                                nghĩ rằng anh đang buộc phải “xạo” theo lệnh của Marvel Studios và 
+                                Sony Pictures. Có rất nhiều bằng chứng của giả thuyết này cho thấy cả 
+                                anh và Tobey Maguire - “Spider-Man” thập niên 2000 - sẽ xuất hiện 
+                                trong No Way Home.
                             </div>
                             <div class="grid sub-post-meta">
                                 <div class="row">
@@ -175,7 +216,7 @@
                             <div class="row">
                                 <div class="col l-10 m-4 sm-0"></div>
                                 <div class="col l-2 m-8 sm-12">
-                                    <a href="./free-guy">Next Post <i class="ti-arrow-right"></i></a>
+                                    <a href="./free-guy.html">Next Post <i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -183,79 +224,39 @@
                             <h3>you may also like</h3>
                             <div class="row">
                                 <div class="col l-4 m-6 sm-12 sub-post-item">
-                                    <img src="./assets/img/Free-Guy.jpg" alt="Free Guy">
+                                    <img src="./assets/img/Free-guy-img.jpg" alt="Free Guy">
                                     <a href="./free-guy.html">'Free Guy' - khi người đàn ông mờ nhạt trở thành anh hùng</a>
                                 </div>
                                 <div class="col l-4 m-6 sm-12 sub-post-item">
-                                    <img src="./assets/img/1917.jpg" alt="1917">
+                                    <img src="./assets/img/1917-img.jpg" alt="1917">
                                     <a href="./1917.html">'1917': Bộ mặt tàn khốc của chiến tranh</a>
                                 </div>
                                 <div class="col l-4 m-6 sm-12 sub-post-item">
-                                    <img src="./assets/img/Arcane.jpg" alt="Arcane">
+                                    <img src="./assets/img/Arcane-img.jpg" alt="Arcane">
                                     <a href="./Arcane.html">Review Series 'Arcane': Nợ Cũ Phải Trả của Netflix</a>
                                 </div>
                             </div>
                         </div>
                         <div class="sub-post-comments">
-                            <h3 class="comments-title">3 comments</h3>
+                            <h3 class="comments-title">0 comments</h3>
                             <div class="comments-holder">
                                 <ol class="comments-list">
-                                    <li class="grid comment">
+                                    <!-- comment 1 -->
+                                    <!-- <li class="grid comment">
                                         <div class="row">
                                             <div class="col l-1 avatar-img">
-                                                <img src="https://www.blogger.com/img/blogger_logo_round_35.png" alt="">
+                                                <img src="" alt="">
                                             </div>
                                             <div class="col l-11 comment-block">
                                                 <div class="comment-header">
-                                                    <div class="user">Lebah Pahit</div>
-                                                    <div class="date-time">January 16, 2018 at 6:37 AM</div>
+                                                    <div class="user"></div>
+                                                    <div class="date-time"></div>
                                                 </div>
-                                                <p class="comment-content">Hey Admin ! Thanks For Sharing Such Type of Information. Please Keep on Sharing Such Type of Article. I Am Lover of Your Site And I Visit Your Site On daily Basis. Because There AreAlot Of Informationable Articles Which I Have Readed And Also Shared On Social Media.</p>
+                                                <p class="comment-content"></p>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="grid comment">
-                                        <div class="row">
-                                            <div class="col l-1 avatar-img">
-                                                <img src="https://www.blogger.com/img/blogger_logo_round_35.png" alt="">
-                                            </div>
-                                            <div class="col l-11 comment-block">
-                                                <div class="comment-header">
-                                                    <div class="user">Lebah Pahit</div>
-                                                    <div class="date-time">January 16, 2018 at 6:37 AM</div>
-                                                </div>
-                                                <p class="comment-content">Hey Admin ! Thanks For Sharing Such Type of Information. Please Keep on Sharing Such Type of Article. I Am Lover of Your Site And I Visit Your Site On daily Basis. Because There AreAlot Of Informationable Articles Which I Have Readed And Also Shared On Social Media.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="grid comment">
-                                        <div class="row">
-                                            <div class="col l-1 avatar-img">
-                                                <img src="https://www.blogger.com/img/blogger_logo_round_35.png" alt="">
-                                            </div>
-                                            <div class="col l-11 comment-block">
-                                                <div class="comment-header">
-                                                    <div class="user">Lebah Pahit</div>
-                                                    <div class="date-time">January 16, 2018 at 6:37 AM</div>
-                                                </div>
-                                                <p class="comment-content">Hey Admin ! Thanks For Sharing Such Type of Information. Please Keep on Sharing Such Type of Article. I Am Lover of Your Site And I Visit Your Site On daily Basis. Because There AreAlot Of Informationable Articles Which I Have Readed And Also Shared On Social Media.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="grid comment">
-                                        <div class="row">
-                                            <div class="col l-1 avatar-img">
-                                                <img src="https://www.blogger.com/img/blogger_logo_round_35.png" alt="">
-                                            </div>
-                                            <div class="col l-11 comment-block">
-                                                <div class="comment-header">
-                                                    <div class="user">Lebah Pahit</div>
-                                                    <div class="date-time">January 16, 2018 at 6:37 AM</div>
-                                                </div>
-                                                <p class="comment-content">Hey Admin ! Thanks For Sharing Such Type of Information. Please Keep on Sharing Such Type of Article. I Am Lover of Your Site And I Visit Your Site On daily Basis. Because There AreAlot Of Informationable Articles Which I Have Readed And Also Shared On Social Media.</p>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    </li> -->
+                                    <!-- end comment -->
                                 </ol>
                             </div>
                         </div>
@@ -316,7 +317,7 @@
                                     <div class="col l-12 side-item">
                                         <div class="row">
                                             <div class="col l-6 m-12 sm-12 side-img">
-                                                <img src="./assets/img/Arcane-Jinx.png" alt="Arcane Jinx">
+                                                <img src="./assets/img/Arcane-img.jpg" alt="Arcane Jinx">
                                             </div>
                                             <div class="col l-6 m-12 sm-12 side-item-text">
                                                 <h4><a href="./Arcane.html">Review Series Arcane: Nợ Cũ Phải Trả của Netflix</a></h4>
@@ -327,7 +328,7 @@
                                     <div class="col l-12 side-item">
                                         <div class="row">
                                             <div class="col l-6 m-12 sm-12 side-img">
-                                                <img src="./assets/img/Eternals.png" alt="Eternals">
+                                                <img src="./assets/img/Eternals-img.png" alt="Eternals">
                                             </div>
                                             <div class="col l-6 m-12 sm-12 side-item-text">
                                                 <h4><a href="./Eternals.html">Review: ETERNALS</a></h4>
@@ -338,7 +339,7 @@
                                     <div class="col l-12 side-item">
                                         <div class="row">
                                             <div class="col l-6 m-12 sm-12 side-img">
-                                                <img src="./assets/img/The-Medium.png" alt="The medium">
+                                                <img src="./assets/img/The-medium-img.jpg" alt="The medium">
                                             </div>
                                             <div class="col l-6 m-12 sm-12 side-item-text">
                                                 <h4><a href="./Medium.html">Review The Medium</a></h4>
@@ -374,7 +375,7 @@
                         </a>
                     </div>
                     <div class="col l-8 m-12 sm-12 footer-logo logo">
-                        <a href="./index"><img src="assets/img/logo (3).jpg" alt="logo"></a>
+                        <a href="./index.html"><img src="assets/img/logo.jpg" alt="logo"></a>
                     </div>
                 </div>
             </div>

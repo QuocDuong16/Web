@@ -47,7 +47,7 @@
                         </a>
                     </div>
                     <ul class="col l-8 m-0 sm-0 nav">
-                        <li><a href="./index">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="">Discover</a></li>
                         <li>
                             <a href="">Category</a>
@@ -67,17 +67,17 @@
                     </ul>
                     <!-- navigation bar -->
                     <div class="col l-0 m-4 sm-4 navbar-btn">
-                        <button class="js-navbar"><i class="ti-menu-alt"></i></button>
+                        <button onclick="nav_open()" type="button"><i class="ti-menu-alt"></i></button>
                     </div>
                     <div class="col l-2 m-8 sm-8 search-box">
                         <a href="./search.html" class="button"><i class="ti-search"></i></a>
                     </div>
                     <!-- navigation on mobile & tablet -->
-                    <div class="nav-overlay"></div>
+                    <div class="nav-overlay" onclick="nav_exit()"></div>
                     <div class="nav-mobile-tablet js-nav-mobile-tablet">
-                        <a href="" class="nav-mobile-tablet-close"><i class="ti-close"></i></a>
+                        <button type="button" onclick="nav_exit()" class="nav-mobile-tablet-close"><i class="ti-close"></i></button>
                         <ul class="nav-list-mobile-tablet">
-                            <li><a href="./index">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="">Discover</a></li>
                             <li>
                                 <a href="">Category</a>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="header-logo logo">
                     <div>
-                        <a href="./index"><img src="assets/img/logo (3).jpg" alt="logo"></a>
+                        <a href="./index.html"><img src="assets/img/logo.jpg" alt="logo"></a>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@
                         <div class="row post-list">
                             <div class="col l-6 m-6 sm-12 post-item">
                                 <div class="post-item-img">
-                                    <img src="assets/img/Little-Women-Post.jpg" alt="Little-Women">
+                                    <img src="./assets/img/Little-women-img.jpg" alt="Little-Women">
                                 </div>
                                 <h4 class="post-item-title"><a href="./Little-Women.html">'Little Women' Tác phẩm đẹp đẻ về tình chị em và thiên tính nữ</a></h4>
                                 <p class="post-item-entry">
@@ -126,22 +126,25 @@
                             </div>
                             <div class="col l-6 m-6 sm-12 post-item">
                                 <div class="post-item-img">
-                                    <img src="assets/img/Arcane.jpg" alt="Arcane">
+                                    <img src="./assets/img/Arcane-img.jpg" alt="Arcane">
                                 </div>
-                                <h4 class="post-item-title"><a href="./Arcane.html"> Review Series Arcane: Nợ Cũ Phải Trả của Netflix</a></h4> 
+                                <h4 class="post-item-title"><a href="./Arcane.html">Review Series Arcane: Nợ Cũ Phải Trả của Netflix</a></h4> 
                                 <p class="post-item-entry">
-
-                                    Hai phút hơn đem lại những cảm xúc hưng phấn kèm sự tò mò kéo lên tới đỉnh. Cùng Ví MoMo xem Riot cho ta những dữ kiện gì trong trailer về câu chuyện của hai chị em Vi...
+                                    Hai phút hơn đem lại những cảm xúc hưng phấn kèm sự tò mò kéo lên 
+                                    tới đỉnh. Cùng xem Riot cho ta những dữ kiện gì trong trailer về 
+                                    câu chuyện của hai chị em Vi...
                                 </p>
                             </div>
                             <div class="col l-6 m-6 sm-12 post-item">
                                 <div class="post-item-img">
-                                    <img src="assets/img/Joker.jpg" alt="Joker">
+                                    <img src="./assets/img/Joker-img.jpg" alt="Joker">
                                 </div>
-                                <h4 class="post-item-title"><a href="./Joker.html"> 'Joker': Tiếng nói thức tỉnh lương tri để xã hội không có những “Gã hề”</a></h4> 
+                                <h4 class="post-item-title"><a href="./Joker.html">'Joker': Tiếng nói thức tỉnh lương tri để xã hội không có những “Gã hề”</a></h4> 
                                 <p class="post-item-entry">
-                                    
-                                    Từ một con người thất bại, vô danh, Arthur Fleck bỗng trở thành một tội phạm nguy hiểm được biết đến với biệt danh Joker, hắn kích động bạo lực và gây nên tình cảnh bất ổn, hỗn loạn. “Joker” là một phim tâm lý giật gân của đạo diễn người...
+                                    Từ một con người thất bại, vô danh, Arthur Fleck bỗng trở thành một 
+                                    tội phạm nguy hiểm được biết đến với biệt danh Joker, hắn kích động 
+                                    bạo lực và gây nên tình cảnh bất ổn, hỗn loạn. “Joker” là một phim 
+                                    tâm lý giật gân của đạo diễn người...
                                 </p>
                             </div>
                          </div>  
@@ -200,10 +203,10 @@
                                     <div class="col l-12 side-item">
                                         <div class="row">
                                             <div class="col l-6 m-12 sm-12 side-img">
-                                                <img src="./assets/img/Arcane-Jinx.png" alt="Arcane Jinx">
+                                                <img src="./assets/img/Arcane-img.jpg" alt="Arcane Jinx">
                                             </div>
                                             <div class="col l-6 m-12 sm-12 side-item-text">
-                                                <h4><a href="./Arcane.html">Review Series Arcane: Nợ Cũ Phải Trả của Netflix</a></h4>
+                                                <h4><a href="./Arcane.html">Review Series Arcane</a></h4>
                                                 <p>29 Nov 2021</p>
                                             </div>
                                         </div>
@@ -211,7 +214,7 @@
                                     <div class="col l-12 side-item">
                                         <div class="row">
                                             <div class="col l-6 m-12 sm-12 side-img">
-                                                <img src="./assets/img/Eternals.png" alt="Eternals">
+                                                <img src="./assets/img/Eternals-img.png" alt="Eternals">
                                             </div>
                                             <div class="col l-6 m-12 sm-12 side-item-text">
                                                 <h4><a href="./Eternals.html">Review: ETERNALS</a></h4>
@@ -222,7 +225,7 @@
                                     <div class="col l-12 side-item">
                                         <div class="row">
                                             <div class="col l-6 m-12 sm-12 side-img">
-                                                <img src="./assets/img/The-Medium.png" alt="The medium">
+                                                <img src="./assets/img/The-medium-img.jpg" alt="The medium">
                                             </div>
                                             <div class="col l-6 m-12 sm-12 side-item-text">
                                                 <h4><a href="./Medium.html">Review The Medium</a></h4>
@@ -258,7 +261,7 @@
                         </a>
                     </div>
                     <div class="col l-8 m-12 sm-12 footer-logo logo">
-                        <a href="./index"><img src="assets/img/logo (3).jpg" alt="logo"></a>
+                        <a href="./index.html"><img src="./assets/img/logo.jpg" alt="logo"></a>
                     </div>
                 </div>
             </div>

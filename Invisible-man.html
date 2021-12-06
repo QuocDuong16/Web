@@ -67,17 +67,17 @@
                     </ul>
                     <!-- navigation bar -->
                     <div class="col l-0 m-4 sm-4 navbar-btn">
-                        <button class="js-navbar"><i class="ti-menu-alt"></i></button>
+                        <button onclick="nav_open()" type="button"><i class="ti-menu-alt"></i></button>
                     </div>
                     <div class="col l-2 m-8 sm-8 search-box">
                         <a href="./search.html" class="button"><i class="ti-search"></i></a>
                     </div>
                     <!-- navigation on mobile & tablet -->
-                    <div class="nav-overlay"></div>
+                    <div class="nav-overlay" onclick="nav_exit()"></div>
                     <div class="nav-mobile-tablet js-nav-mobile-tablet">
-                        <a href="" class="nav-mobile-tablet-close"><i class="ti-close"></i></a>
+                        <button type="button" onclick="nav_exit()" class="nav-mobile-tablet-close"><i class="ti-close"></i></button>
                         <ul class="nav-list-mobile-tablet">
-                            <li><a href="./index">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="">Discover</a></li>
                             <li>
                                 <a href="">Category</a>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="header-logo logo">
                     <div>
-                        <a href="./index"><img src="assets/img/logo (3).jpg" alt="logo"></a>
+                        <a href="./index.html"><img src="./assets/img/logo.jpg" alt="logo"></a>
                     </div>
                 </div>
             </div>
@@ -125,34 +125,94 @@
                                 </div>
                             </div>
                             <div class="sub-post-entry">
-                                <p class="bold-text">Trong The Invisible Man, Elisabeth Moss hóa thân thành người phụ nữ mạnh mẽ, tìm cách trốn chạy khỏi cuộc sống gia đình ngột ngạt luôn bị người yêu thiên tài kiểm soát. </p>
+                                <p class="bold-text">Trong The Invisible Man, Elisabeth Moss hóa 
+                                    thân thành người phụ nữ mạnh mẽ, tìm cách trốn chạy khỏi cuộc 
+                                    sống gia đình ngột ngạt luôn bị người yêu thiên tài kiểm soát.</p>
                                 <img src="./assets/img/Invisible-man1.jpg" alt="Invisible Man">
-                                The Invisible Man (tựa Việt: Kẻ vô hình) xoay quanh Cecilia Kass (Elisabeth Moss), người yêu của Adrian (Oliver Jackson-Cohen), nhà khoa học tiên phong trong lĩnh vực quang học và được rất nhiều cô gái theo đuổi. Bề ngoài hoàn hảo là vậy nhưng thực chất, Adrian lại là người vô cùng độc đoán. Anh tìm cách kiểm soát mọi hoạt động của Cecilia Kass, thậm chí cả suy nghĩ hay hơi thở của cô.
+                                The Invisible Man (tựa Việt: Kẻ vô hình) xoay quanh Cecilia Kass 
+                                (Elisabeth Moss), người yêu của Adrian (Oliver Jackson-Cohen), nhà 
+                                khoa học tiên phong trong lĩnh vực quang học và được rất nhiều cô gái 
+                                theo đuổi. Bề ngoài hoàn hảo là vậy nhưng thực chất, Adrian lại là 
+                                người vô cùng độc đoán. Anh tìm cách kiểm soát mọi hoạt động của 
+                                Cecilia Kass, thậm chí cả suy nghĩ hay hơi thở của cô.
                                 <br>
-                                Không chịu nổi cuộc sống gò bó với người yêu, Cecilia chạy trốn khỏi Adrian và nương nhờ tại nhà một người bạn. Mọi chuyện tưởng chừng như kết thúc thì Adrian được tuyên bố đã tự sát và để lại tài sản thừa kế khổng lồ cho Cecilia. Thời gian sau đó, Cecilia cảm nhận được sự hiện diện của Adrian xung quanh cuộc sống hiện tại của mình, nhưng điều kỳ lạ là cô không thể nhìn thấy anh. Nỗi ám ảnh tìm ra chân tướng sự việc và thoát khỏi sự kiểm soát của Adrian khiến Cecilia rơi vào trạng thái hoảng loạn, bị nhiều người nghi ngờ về vấn đề tâm lý.
+                                Không chịu nổi cuộc sống gò bó với người yêu, Cecilia chạy trốn khỏi 
+                                Adrian và nương nhờ tại nhà một người bạn. Mọi chuyện tưởng chừng như 
+                                kết thúc thì Adrian được tuyên bố đã tự sát và để lại tài sản thừa kế 
+                                khổng lồ cho Cecilia. Thời gian sau đó, Cecilia cảm nhận được sự hiện 
+                                diện của Adrian xung quanh cuộc sống hiện tại của mình, nhưng điều kỳ 
+                                lạ là cô không thể nhìn thấy anh. Nỗi ám ảnh tìm ra chân tướng sự việc 
+                                và thoát khỏi sự kiểm soát của Adrian khiến Cecilia rơi vào trạng thái 
+                                hoảng loạn, bị nhiều người nghi ngờ về vấn đề tâm lý.
                                 <br>
                                 <img src="./assets/img/Invisible-man2.jpg" alt="Invisible Man">
                                 <br>
-                                <h3><p class="bold-text">Cuộc sống tràn ngập những điều vô hình đáng sợ </p> </h3> 
+                                <h3><p class="bold-text">Cuộc sống tràn ngập những điều vô hình đáng 
+                                    sợ</p></h3> 
                                 <br>
-                                The Invisible Man là một bước khởi đầu cho sự phục hưng của Universal. Ngay từ phút đầu tiên, phim đã đem đến sự căng thẳng, hồi hộp cho người xem. Những tình tiết bí ẩn tạo sự tò mò cho khán giả, màu sắc u tối và âm nhạc đậm chất huyền bí mở ra một thế giới có phần viễn tưởng của con người. Thế lực đáng sợ vô hình dõi theo nữ nhân vật chính không phải là ma quỷ hay người ngoài hành tinh, mà lại chính là anh chàng người yêu cô từng có quãng thời gian dài chung sống.
+                                The Invisible Man là một bước khởi đầu cho sự phục hưng của Universal. 
+                                Ngay từ phút đầu tiên, phim đã đem đến sự căng thẳng, hồi hộp cho 
+                                người xem. Những tình tiết bí ẩn tạo sự tò mò cho khán giả, màu sắc 
+                                u tối và âm nhạc đậm chất huyền bí mở ra một thế giới có phần viễn 
+                                tưởng của con người. Thế lực đáng sợ vô hình dõi theo nữ nhân vật 
+                                chính không phải là ma quỷ hay người ngoài hành tinh, mà lại chính 
+                                là anh chàng người yêu cô từng có quãng thời gian dài chung sống.
                                 <br>
-                                Tiêu đề The Invisible Man gợi ra không gian tăm tối đúng như tông màu chủ đạo trong tác phẩm, là ẩn dụ về những điều đáng sợ vô hình luôn đe doạ cuộc sống con người. Có những thứ ta không thể nhìn thấy bằng mắt thường nhưng lại can thiệp vào cuộc sống, kiểm soát và hủy hoại bản thân chúng ta.
+                                Tiêu đề The Invisible Man gợi ra không gian tăm tối đúng như tông 
+                                màu chủ đạo trong tác phẩm, là ẩn dụ về những điều đáng sợ vô hình 
+                                luôn đe doạ cuộc sống con người. Có những thứ ta không thể nhìn thấy 
+                                bằng mắt thường nhưng lại can thiệp vào cuộc sống, kiểm soát và hủy 
+                                hoại bản thân chúng ta.
                                 <br>
-                                Giống như kẻ vô hình tuy không thể nhìn, không thể sờ thấy được nhưng sự có mặt của hắn luôn được đánh dấu bằng những xáo trộn, từ con dao trong bếp, vết chân trên tấm chăn, hay lọ thuốc dính máu... Sự vô hình ấy là tấm áo giáp bên ngoài, là phương tiện để thực hiện những dã tâm ích kỷ của một con người khôn ngoan, luôn toan tính và thích chiếm đoạt người khác.
+                                Giống như kẻ vô hình tuy không thể nhìn, không thể sờ thấy được 
+                                nhưng sự có mặt của hắn luôn được đánh dấu bằng những xáo trộn, 
+                                từ con dao trong bếp, vết chân trên tấm chăn, hay lọ thuốc dính 
+                                máu... Sự vô hình ấy là tấm áo giáp bên ngoài, là phương tiện để 
+                                thực hiện những dã tâm ích kỷ của một con người khôn ngoan, luôn 
+                                toan tính và thích chiếm đoạt người khác.
                                 <br>
-                                Phim mô tả chậm rãi, từ tốn những khoảng không gian vắng lặng, báo hiệu điều không hay xảy ra. Những cảnh quay rộng và lia máy quay chậm tạo sự hồi hộp cho người xem, khiến họ cùng chung một cảm giác lo lắng với nữ nhân vật. Cả bộ phim rất ít khi sử dụng jump-scare (hù dọa), vốn là đặc trưng của dòng phim tâm lý kinh dị, nhưng vẫn mang đến sự căng thẳng và kịch tính cần thiết.
+                                Phim mô tả chậm rãi, từ tốn những khoảng không gian vắng lặng, báo 
+                                hiệu điều không hay xảy ra. Những cảnh quay rộng và lia máy quay 
+                                chậm tạo sự hồi hộp cho người xem, khiến họ cùng chung một cảm giác 
+                                lo lắng với nữ nhân vật. Cả bộ phim rất ít khi sử dụng jump-scare 
+                                (hù dọa), vốn là đặc trưng của dòng phim tâm lý kinh dị, nhưng vẫn 
+                                mang đến sự căng thẳng và kịch tính cần thiết.
                                 <br>
-                                <h3><p class="bold-text"> Tranh đấu chống lại bạo lực và sự thao túng  </p> </h3> 
-                                Nhân vật Cecilia là hình ảnh biểu trưng cho những người phụ nữ đáng thương, bất đắc dĩ trở thành nạn nhân của chứng bạo hành gia đình, bị kiềm tỏa và khống chế về mọi mặt. Sống trong “nhà tù” như thế, Cecilia dần đánh mất đi niềm vui và không còn là chính mình. Cô thay đổi từ một cô gái thụ động trở thành người phụ nữ khao khát tự do mãnh liệt, chủ động tìm cách chạy trốn để thoát khỏi cuộc sống ngột ngạt và nhiều áp lực.
+                                <h3><p class="bold-text"> Tranh đấu chống lại bạo lực và sự thao túng</p></h3> 
+                                Nhân vật Cecilia là hình ảnh biểu trưng cho những người phụ nữ đáng 
+                                thương, bất đắc dĩ trở thành nạn nhân của chứng bạo hành gia đình, bị 
+                                kiềm tỏa và khống chế về mọi mặt. Sống trong “nhà tù” như thế, 
+                                Cecilia dần đánh mất đi niềm vui và không còn là chính mình. Cô 
+                                thay đổi từ một cô gái thụ động trở thành người phụ nữ khao khát 
+                                tự do mãnh liệt, chủ động tìm cách chạy trốn để thoát khỏi cuộc 
+                                sống ngột ngạt và nhiều áp lực.
                                 <br>
                                 <img src="./assets/img/Invisible-man3.jpg" alt="Invisible Man">
                                 <br>
-                                Khi tác phẩm trôi về 1/3 thời lượng cuối cùng, khán giả thấy được sự toan tính của Cecilia. Cô không còn chút sợ hãi, khoan nhượng trước một người yêu tàn bạo, đến phút cuối vẫn không chịu thừa nhận sai lầm của bản thân. Cecilia đã cho anh ta cơ hội để tự thú nhận những hành vi sai trái mình đã làm. Nhưng rồi, cô bật khóc vì biết rằng Adrian mãi mãi vẫn chỉ là một kẻ ích kỷ, vô lương tâm, buộc cô phải đưa đến quyết định chính tay mình sẽ là người chấm dứt mối quan hệ ác mộng.
+                                Khi tác phẩm trôi về 1/3 thời lượng cuối cùng, khán giả thấy được sự 
+                                toan tính của Cecilia. Cô không còn chút sợ hãi, khoan nhượng trước 
+                                một người yêu tàn bạo, đến phút cuối vẫn không chịu thừa nhận sai lầm 
+                                của bản thân. Cecilia đã cho anh ta cơ hội để tự thú nhận những hành 
+                                vi sai trái mình đã làm. Nhưng rồi, cô bật khóc vì biết rằng Adrian 
+                                mãi mãi vẫn chỉ là một kẻ ích kỷ, vô lương tâm, buộc cô phải đưa đến 
+                                quyết định chính tay mình sẽ là người chấm dứt mối quan hệ ác mộng.
                                 <br>
-                                Elisabeth Moss là điểm cộng của The Invisible Man. Cô tiếp tục chứng minh khả năng đảm đương các vai diễn sang chấn tâm lý. Xuất hiện với dáng vẻ tiều tụy, xơ xác ngay giữa căn biệt thự tuyệt đẹp nhìn ra biển, người xem cảm nhận được sự lo lắng, mệt mỏi của Cecilia trong đôi mắt thâm quầng hay làn da thâm nám. Nữ diễn viên giữ vững được mạch tâm lý của nhân vật như thể đó là cuộc sống của cô ngoài đời. Việc hóa thân từ một người có tinh thần bất ổn sang một kẻ gian xảo để chống trả kẻ thù không hề khó với Elisabeth Moss. Cô làm tốt đến mức dễ đánh lừa khán giả trong nhiều tình huống, khiến người xem tò mò và muốn theo dõi quá trình phát triển của nhân vật.
+                                Elisabeth Moss là điểm cộng của The Invisible Man. Cô tiếp tục chứng 
+                                minh khả năng đảm đương các vai diễn sang chấn tâm lý. Xuất hiện với 
+                                dáng vẻ tiều tụy, xơ xác ngay giữa căn biệt thự tuyệt đẹp nhìn ra biển, 
+                                người xem cảm nhận được sự lo lắng, mệt mỏi của Cecilia trong đôi mắt 
+                                thâm quầng hay làn da thâm nám. Nữ diễn viên giữ vững được mạch tâm 
+                                lý của nhân vật như thể đó là cuộc sống của cô ngoài đời. Việc hóa 
+                                thân từ một người có tinh thần bất ổn sang một kẻ gian xảo để chống 
+                                trả kẻ thù không hề khó với Elisabeth Moss. Cô làm tốt đến mức dễ 
+                                đánh lừa khán giả trong nhiều tình huống, khiến người xem tò mò và 
+                                muốn theo dõi quá trình phát triển của nhân vật.
                                 <br>
-                                The Invisible Man cũng nêu bật thông điệp phê phán về những mối quan hệ lạm dụng, thích kiểm soát và ưa bạo lực của đàn ông. Tác phẩm đại diện cho tiếng nói nữ quyền mạnh mẽ, khi người phụ nữ muốn được làm chủ cuộc sống của chính mình chứ không đặt nó dưới bàn tay thao túng của đàn ông.
+                                The Invisible Man cũng nêu bật thông điệp phê phán về những mối 
+                                quan hệ lạm dụng, thích kiểm soát và ưa bạo lực của đàn ông. Tác 
+                                phẩm đại diện cho tiếng nói nữ quyền mạnh mẽ, khi người phụ nữ muốn 
+                                được làm chủ cuộc sống của chính mình chứ không đặt nó dưới bàn tay 
+                                thao túng của đàn ông.
                             </div>
                             <div class="grid sub-post-meta">
                                 <div class="row">
@@ -180,7 +240,7 @@
                             <div class="row">
                                 <div class="col l-10 m-4 sm-0"></div>
                                 <div class="col l-2 m-8 sm-12">
-                                    <a href="./Joker">Next Post <i class="ti-arrow-right"></i></a>
+                                    <a href="./Joker.html">Next Post <i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -188,79 +248,39 @@
                             <h3>you may also like</h3>
                             <div class="row">
                                 <div class="col l-4 m-6 sm-12 sub-post-item">
-                                    <img src="./assets/img/Joker.jpg" alt="Joker">
-                                    <a href="./Joker">'Joker': Tiếng nói thức tỉnh lương tri để xã hội không có những “Gã hề”</a>
+                                    <img src="./assets/img/Joker-img.jpg" alt="Joker">
+                                    <a href="./Joker.html">'Joker': Tiếng nói thức tỉnh lương tri để xã hội không có những “Gã hề”</a>
                                 </div>
                                 <div class="col l-4 m-6 sm-12 sub-post-item">
-                                    <img src="./assets/img/Little-Women.jpg" alt="Little Women">
-                                    <a href="./Little-Women">'Little Women' Tác phẩm đẹp đẻ về tình chị em và thiên tính nữ</a>
+                                    <img src="./assets/img/Little-women-img.jpg" alt="Little Women">
+                                    <a href="./Little-Women.html">'Little Women' Tác phẩm đẹp đẻ về tình chị em và thiên tính nữ</a>
                                 </div>
                                 <div class="col l-4 m-6 sm-12 sub-post-item">
-                                    <img src="./assets/img/The-Medium.png" alt="Medium">
-                                    <a href="./Medium">Review The The-Medium</a>
+                                    <img src="./assets/img/The-medium-img.jpg" alt="Medium">
+                                    <a href="./Medium.html">Review The The-Medium</a>
                                 </div>
                             </div>
                         </div>
                         <div class="sub-post-comments">
-                            <h3 class="comments-title">3 comments</h3>
+                            <h3 class="comments-title">0 comments</h3>
                             <div class="comments-holder">
                                 <ol class="comments-list">
-                                    <li class="grid comment">
+                                    <!-- comment 1 -->
+                                    <!-- <li class="grid comment">
                                         <div class="row">
                                             <div class="col l-1 avatar-img">
-                                                <img src="https://www.blogger.com/img/blogger_logo_round_35.png" alt="">
+                                                <img src="" alt="">
                                             </div>
                                             <div class="col l-11 comment-block">
                                                 <div class="comment-header">
-                                                    <div class="user">Lebah Pahit</div>
-                                                    <div class="date-time">January 16, 2018 at 6:37 AM</div>
+                                                    <div class="user"></div>
+                                                    <div class="date-time"></div>
                                                 </div>
-                                                <p class="comment-content">Hey Admin ! Thanks For Sharing Such Type of Information. Please Keep on Sharing Such Type of Article. I Am Lover of Your Site And I Visit Your Site On daily Basis. Because There AreAlot Of Informationable Articles Which I Have Readed And Also Shared On Social Media.</p>
+                                                <p class="comment-content"></p>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="grid comment">
-                                        <div class="row">
-                                            <div class="col l-1 avatar-img">
-                                                <img src="https://www.blogger.com/img/blogger_logo_round_35.png" alt="">
-                                            </div>
-                                            <div class="col l-11 comment-block">
-                                                <div class="comment-header">
-                                                    <div class="user">Lebah Pahit</div>
-                                                    <div class="date-time">January 16, 2018 at 6:37 AM</div>
-                                                </div>
-                                                <p class="comment-content">Hey Admin ! Thanks For Sharing Such Type of Information. Please Keep on Sharing Such Type of Article. I Am Lover of Your Site And I Visit Your Site On daily Basis. Because There AreAlot Of Informationable Articles Which I Have Readed And Also Shared On Social Media.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="grid comment">
-                                        <div class="row">
-                                            <div class="col l-1 avatar-img">
-                                                <img src="https://www.blogger.com/img/blogger_logo_round_35.png" alt="">
-                                            </div>
-                                            <div class="col l-11 comment-block">
-                                                <div class="comment-header">
-                                                    <div class="user">Lebah Pahit</div>
-                                                    <div class="date-time">January 16, 2018 at 6:37 AM</div>
-                                                </div>
-                                                <p class="comment-content">Hey Admin ! Thanks For Sharing Such Type of Information. Please Keep on Sharing Such Type of Article. I Am Lover of Your Site And I Visit Your Site On daily Basis. Because There AreAlot Of Informationable Articles Which I Have Readed And Also Shared On Social Media.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="grid comment">
-                                        <div class="row">
-                                            <div class="col l-1 avatar-img">
-                                                <img src="https://www.blogger.com/img/blogger_logo_round_35.png" alt="">
-                                            </div>
-                                            <div class="col l-11 comment-block">
-                                                <div class="comment-header">
-                                                    <div class="user">Lebah Pahit</div>
-                                                    <div class="date-time">January 16, 2018 at 6:37 AM</div>
-                                                </div>
-                                                <p class="comment-content">Hey Admin ! Thanks For Sharing Such Type of Information. Please Keep on Sharing Such Type of Article. I Am Lover of Your Site And I Visit Your Site On daily Basis. Because There AreAlot Of Informationable Articles Which I Have Readed And Also Shared On Social Media.</p>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    </li> -->
+                                    <!-- end comment -->
                                 </ol>
                             </div>
                         </div>
@@ -321,7 +341,7 @@
                                     <div class="col l-12 side-item">
                                         <div class="row">
                                             <div class="col l-6 m-12 sm-12 side-img">
-                                                <img src="./assets/img/Arcane-Jinx.png" alt="Arcane Jinx">
+                                                <img src="./assets/img/Arcane-img.jpg" alt="Arcane Jinx">
                                             </div>
                                             <div class="col l-6 m-12 sm-12 side-item-text">
                                                 <h4><a href="./Arcane.html">Phân tích tập 9 Arcane</a></h4>
@@ -332,7 +352,7 @@
                                     <div class="col l-12 side-item">
                                         <div class="row">
                                             <div class="col l-6 m-12 sm-12 side-img">
-                                                <img src="./assets/img/Eternals.png" alt="Eternals">
+                                                <img src="./assets/img/Eternals-img.png" alt="Eternals">
                                             </div>
                                             <div class="col l-6 m-12 sm-12 side-item-text">
                                                 <h4><a href="./Eternals.html">Review: ETERNALS</a></h4>
@@ -343,7 +363,7 @@
                                     <div class="col l-12 side-item">
                                         <div class="row">
                                             <div class="col l-6 m-12 sm-12 side-img">
-                                                <img src="./assets/img/The-Medium.png" alt="The medium">
+                                                <img src="./assets/img/The-medium-img.jpg" alt="The medium">
                                             </div>
                                             <div class="col l-6 m-12 sm-12 side-item-text">
                                                 <h4><a href="./Medium.html">Review The Medium</a></h4>
@@ -379,7 +399,7 @@
                         </a>
                     </div>
                     <div class="col l-8 m-12 sm-12 footer-logo logo">
-                        <a href="./index"><img src="assets/img/logo (3).jpg" alt="logo"></a>
+                        <a href="./index.html"><img src="assets/img/logo.jpg" alt="logo"></a>
                     </div>
                 </div>
             </div>

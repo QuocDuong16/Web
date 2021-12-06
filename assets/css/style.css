@@ -30,6 +30,9 @@ a {
     height: 1px;
     background-color: #ebebeb;
 }
+.open {
+    display: block;
+}
 /* main css */
 #main {
     width: 100%;
@@ -113,6 +116,8 @@ a {
     width: 28px;
     height: 28px;
     z-index: 1;
+    background-color: #f9eded;
+    cursor: pointer;
 }
 
 #header .search-box {
@@ -198,7 +203,10 @@ a {
     font-size: 1rem;
     position: absolute;
     top: 1rem;
-    right: 1rem;    
+    right: 1rem;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
 }
 /* End: header */
 
@@ -656,6 +664,8 @@ a {
 .search-container {
     width: 100%;
     padding: 0 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 .search-box-web {
     width: 100%;
@@ -673,4 +683,11 @@ a {
 }
 .search-item img {
     width: 100%;
+}
+.search-item a {
+    color: #333;
+    opacity: 1;
+}
+.search-item h4:hover {
+    opacity: 0.6;
 }
