@@ -6,13 +6,16 @@ showSlides();
 function showSlides() {
     var i;
     var slides = document.querySelectorAll('.js-mySlides');
+    if (slides.length == 0) {
+        return;
+    }
     for (i = 0; i < slides.length; i++) { 
-        slides[i].style.display = "none"; //
+        slides[i].style.display = 'none'; //
     }
     slideIndex= slideIndex +1;
     if (slideIndex > slides.length) {slideIndex = 1}    
     const temp = slides[slideIndex - 1];
-    temp.style.display = "block";
+    temp.style.display = 'block';
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 

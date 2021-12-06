@@ -117,3 +117,15 @@ function nav_exit() {
     navOverlay.style.display = 'none';
     navMobileTablet.style.display = 'none';
 }
+
+// category
+const category = document.querySelector('.js-category')
+const sub_nav = document.querySelector('.sub-nav-mobile-tablet')
+function category_open() {
+    if (sub_nav.style.display == 'none') {
+        sub_nav.style.display = 'inline-block';    
+    }
+    else {
+        sub_nav.style.display = 'none';
+    }
+}

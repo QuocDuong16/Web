@@ -30,9 +30,6 @@ a {
     height: 1px;
     background-color: #ebebeb;
 }
-.open {
-    display: block;
-}
 /* main css */
 #main {
     width: 100%;
@@ -168,10 +165,8 @@ a {
     padding: 8px 0;
     font-size: 1rem;
     padding: 10px 20px;
-}
-.nav-list-mobile-tablet li:hover a {
     border: 1px solid #eee;
-    background-color: #f9eded;
+    cursor: pointer;
 }
 .nav-list-mobile-tablet > li {
     position: relative;
@@ -182,9 +177,7 @@ a {
     top: 100%;
     right: 0;
     z-index: 1;
-}
-.nav-list-mobile-tablet li:hover .sub-nav-mobile-tablet {
-    display: inline-block;
+    background-color: #f9eded;
 }
 .sub-nav-mobile-tablet a {
     padding: 6px 10px 7px 10px;
