@@ -119,7 +119,6 @@ function nav_exit() {
 }
 
 // category
-const category = document.querySelector('.js-category')
 const sub_nav = document.querySelector('.sub-nav-mobile-tablet')
 function category_open() {
     if (sub_nav.style.display == 'none') {
